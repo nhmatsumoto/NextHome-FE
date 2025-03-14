@@ -77,7 +77,10 @@ export default function PropertyPage() {
               {property.floorArea} m² • Construído em {property.yearBuilt}
             </p>
             <p>
-              <Link href={`/property/${property.id}`}> Ver mais</Link>
+              <Link href={`/property/${property.id}`} className="hover:underline">VER MAIS</Link>
+            </p>
+            <p>
+              <Link href={`/property/${property.id}/edit`} className="hover:underline">EDITAR</Link>
             </p>
           </li>
         ))}

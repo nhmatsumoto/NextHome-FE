@@ -9,19 +9,18 @@ import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Navbar() {
 
- 
   const { data: session, status } = useSession();
   const router = useRouter();
   const pathname = usePathname();
-  const t = useTranslation();
+  // const t = useTranslation();
   
-  const changeLanguage = (lang: string) => {
-    if (lang === "pt-BR") {
-      router.push("/");
-    } else {
-      router.push(`/${lang}${pathname}`);
-    }
-  };
+  // const changeLanguage = (lang: string) => {
+  //   if (lang === "pt-BR") {
+  //     router.push("/");
+  //   } else {
+  //     router.push(`/${lang}${pathname}`);
+  //   }
+  // };
 
   return (
     <nav className="bg-gray-900 text-white p-4 flex justify-between items-center">
@@ -41,9 +40,9 @@ export default function Navbar() {
 
       {/* Direita - Usuário e Botões de Login/Logout */}
       <div className="flex items-center space-x-4">
-        <>
+        {/* <>
           <LanguageSwitcher />
-        </>
+        </> */}
         {status === "loading" ? (
           <p>Loading...</p>
         ) : session ? (
