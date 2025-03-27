@@ -1,7 +1,6 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
-import Navbar from "@/components/ui/Navbar";
-import { SessionProvider } from "next-auth/react";
+import Navbar from "@/components/navbar";
 import AuthSessionProvider from "@/components/auth/SessionProvider";
 
 const inter = Inter({ subsets: ["latin"] });

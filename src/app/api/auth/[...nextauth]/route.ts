@@ -9,9 +9,6 @@ export const authOptions: NextAuthOptions = {
         issuer: `${process.env.KEYCLOAK_ISSUER}`,
       }),
     ],
-    pages: {
-      signIn: "/login", // Página de login customizada
-    },
     callbacks: {
       async jwt({ token, account }) {
         
@@ -75,4 +72,3 @@ export const authOptions: NextAuthOptions = {
 const handler = NextAuth(authOptions);
 
 export { handler as GET, handler as POST };
-

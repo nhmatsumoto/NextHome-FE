@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import api from "../../../services/apiClient";
 import { getSession } from "next-auth/react";
-import Loader from "@/components/ui/Loader";
+import Loader from "@/components/ui/loader";
 import { BedDouble, Bath, Car, Ruler, Calendar, ArrowLeft, Phone } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
